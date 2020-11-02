@@ -30,17 +30,20 @@ export default class Home extends Vue {}
 </script>
 
 <style lang="scss">
+header {
+  z-index: 100;
+}
 .iam__header__content {
   padding: 20px 0;
   box-shadow: 0px 3px 17.6px 2.4px rgba(0, 0, 0, 0.06);
-  .content{
+  .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .iam__logo{
+    .iam__logo {
       flex-grow: 3;
     }
-    .iam__phone{
+    .iam__phone {
       flex-grow: 1;
     }
   }
