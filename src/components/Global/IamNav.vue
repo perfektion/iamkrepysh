@@ -22,7 +22,7 @@ export default class IamNav extends Vue {}
     & > span,
     & > span::before,
     & > span::after {
-      background-color: red;
+      background-color: $color_accent;
     }
   }
   &:focus {
@@ -30,7 +30,7 @@ export default class IamNav extends Vue {}
     & > span,
     & > span::before,
     & > span::after {
-      background-color: red;
+      background-color: $color_accent;
     }
   }
   &:active {
@@ -38,7 +38,7 @@ export default class IamNav extends Vue {}
     & > span,
     & > span::before,
     & > span::after {
-      background-color: red;
+      background-color: $color_accent;
     }
   }
 }

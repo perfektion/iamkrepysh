@@ -1,7 +1,9 @@
 <template>
-  <a class="iam__logo" href="/"
-    ><img src="/img/logo.png" alt="Логотип школы физической подготовки детей I'm Крепыш»"
-  /></a>
+  <div class="iam__logo">
+    <a href="/"
+      ><img src="/img/logo.png" alt="Логотип школы физической подготовки детей I'm Крепыш»"
+    /></a>
+  </div>
 </template>
 
 <script lang="ts">
@@ -12,18 +14,19 @@ export default class IamLogo extends Vue {}
 </script>
 
 <style lang="scss">
-.iam__logo{
-  &:hover{
+.iam__logo a {
+  display: inline-block;
+  &:hover {
     outline: none;
-    background-color:$color_grey_light;
+    background-color: $color_grey_light;
   }
-  &:focus{
+  &:focus {
     outline: none;
-    background-color:$color_grey_light;
+    background-color: $color_grey_light;
   }
-  &:active{
+  &:active {
     outline: none;
-    background-color:$color_grey_light;
+    background-color: $color_grey_light;
   }
 }
 </style>

@@ -30,10 +30,12 @@ export default class IamPhone extends Vue {}
     &:focus {
       outline: none;
       color: $color_accent_dark;
+      background-color: $color_grey_light;
     }
     &:active {
       outline: none;
       color: $color_accent_dark;
+      background-color: $color_grey_light;
     }
     i {
       font-size: 0.9375rem;
