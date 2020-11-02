@@ -18,7 +18,6 @@ export default class IamLogo extends Vue {}
   display: inline-block;
   &:hover {
     outline: none;
-    background-color: $color_grey_light;
   }
   &:focus {
     outline: none;
