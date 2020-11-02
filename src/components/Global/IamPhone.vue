@@ -1,6 +1,6 @@
 <template>
   <div class="iam__phone">
-    <a href="tel:8 (928) 282-87-08">
+    <a href="tel:89282828708">
       <i class="fas fa-phone"></i>
       8 (928) 282-87-08
     </a>

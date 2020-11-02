@@ -29,6 +29,11 @@ body {
   padding: 0;
 }
 
+h1 {
+  font-size: 2.8125rem;
+  font-family: "BIP";
+  line-height: 1.37em;
+}
 .visually_hidden:not(:focus):not(:active) {
   position: absolute;
 
