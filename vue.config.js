@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: '/iamkrepysh/',
   css: {
     loaderOptions: {
       sass: {
