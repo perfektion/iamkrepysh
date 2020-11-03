@@ -29,11 +29,32 @@ body {
   padding: 0;
 }
 
+p {
+  line-height: 1.48em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "BIP";
+  color: #000;
+  span{
+    color: $color_accent;
+  }
+}
+
 h1 {
   font-size: 2.8125rem;
-  font-family: "BIP";
   line-height: 1.37em;
 }
+
+h2 {
+  font-size: 1.875rem;
+  line-height: 1.3em;
+}
+
 .visually_hidden:not(:focus):not(:active) {
   position: absolute;
 
