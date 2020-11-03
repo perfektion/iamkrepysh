@@ -8,16 +8,20 @@
       </p>
       <img class="iam__benefit__img" src="/img/fon2.png" alt="Ребёнок из школы I'm Крепыш" />
       <ul class="iam__benefit__list">
-        <div class="iam__benefit__list__group">
-          <li>Крепкий фундамент физической подготовки</li>
-          <li>Здоровье</li>
-          <li>Эмоциональный интелект</li>
-        </div>
-        <div class="iam__benefit__list__group">
-          <li>Умение ставить и достигать цели</li>
-          <li>Характер и дисциплина</li>
-          <li>Координация и ловкость</li>
-        </div>
+        <li class="iam__benefit__list__group">
+          <ul>
+            <li>Крепкий фундамент физической подготовки</li>
+            <li>Здоровье</li>
+            <li>Эмоциональный интелект</li>
+          </ul>
+        </li>
+        <li class="iam__benefit__list__group">
+          <ul>
+            <li>Умение ставить и достигать цели</li>
+            <li>Характер и дисциплина</li>
+            <li>Координация и ловкость</li>
+          </ul>
+        </li>
       </ul>
     </div>
   </section>
@@ -67,7 +71,7 @@ export default class IamBenefit extends Vue {}
       justify-content: space-between;
       position: relative;
       z-index: 10;
-      li {
+      ul li {
         width: 270px;
         height: 75px;
         text-align: center;
