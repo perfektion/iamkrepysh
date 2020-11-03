@@ -3,7 +3,7 @@
     <div class="content">
       <h2>Команда тренеров работают над развитием <span>вашего ребёнка</span></h2>
       <p>Каждый эксперт даёт только то, чему посвятил свою жизнь</p>
-      <img src="/img/team.png" alt="Команда тренеров школы" />
+      <img src="./img/team.png" alt="Команда тренеров школы" />
       <ul class="iam__trainers__arias" aria-label="Тренера помогают развить: ">
         <li class="iam__trainers__arias__first">Гибкость</li>
         <li class="iam__trainers__arias__second">Силу</li>
@@ -64,7 +64,7 @@ export default class IamTrainersTeam extends Vue {}
       top: 264px;
       left: 60px;
       &::before {
-        content: url(/img/circles-1.svg);
+        content: url(./img/circles-1.svg);
         position: absolute;
         top: -30px;
         left: -30px;
@@ -79,7 +79,7 @@ export default class IamTrainersTeam extends Vue {}
       top: 723px;
       left: 410px;
       &::before {
-        content: url(/img/circles-2.svg);
+        content: url(./img/circles-2.svg);
         position: absolute;
         bottom: -30px;
         left: -30px;
@@ -94,7 +94,7 @@ export default class IamTrainersTeam extends Vue {}
       top: 304px;
       left: 810px;
       &::after {
-        content: url(/img/circles-3.svg);
+        content: url(./img/circles-3.svg);
         position: absolute;
         top: -30px;
         right: -30px;
