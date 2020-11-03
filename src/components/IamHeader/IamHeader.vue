@@ -14,7 +14,7 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import IamPreHeader from '@/components/IamHeader/IamPreHeader/IamPreHeader.vue';
-import IamLogo from '@/components/Global/IamLogo.vue';
+import IamLogo from '@/components/Global/IamLogo/IamLogo.vue';
 import IamPhone from '@/components/Global/IamPhone.vue';
 import IamNav from '@/components/Global/IamNav.vue';
 

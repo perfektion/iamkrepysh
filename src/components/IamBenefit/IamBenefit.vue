@@ -6,7 +6,11 @@
         Прививайте ребёнку любовь к спорту с ранних лет. Игровые элементы вызывают интерес у
         ребёнка, а достижения уровней учат ставить и добиваться целей.
       </p>
-      <img class="iam__benefit__img" src="./img/fon2.png" alt="Ребёнок из школы I'm Крепыш" />
+      <img
+        class="iam__benefit__img"
+        src="./img/fon2.png"
+        alt="Ребёнок из школы I'm Крепыш"
+      />
       <ul class="iam__benefit__list">
         <li class="iam__benefit__list__group">
           <ul>
@@ -38,7 +42,7 @@ export default class IamBenefit extends Vue {}
 .iam__benefit {
   padding-top: 130px;
   position: relative;
-  background: url(./img/benefit-bg.svg) no-repeat center top / cover;
+  background: url('./img/benefit-bg.svg') no-repeat center top / cover;
   .content {
     text-align: center;
     position: relative;

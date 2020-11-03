@@ -1,8 +1,8 @@
 <template>
   <div class="iam__logo">
-    <a href="/"
-      ><img src="../img/logo.png" alt="Логотип школы физической подготовки детей I'm Крепыш»"
-    /></a>
+    <RouterLink to="/">
+      <img src="./img/logo.png" alt="Логотип школы физической подготовки детей I'm Крепыш»" />
+    </RouterLink>
   </div>
 </template>
 

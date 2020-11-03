@@ -36,8 +36,9 @@ export default class IamOffer extends Vue {}
     padding-bottom: 3rem;
     position: relative;
     background-color: #fff;
-    background: url(./img/sun.png) top left no-repeat, url(./img/children1.png) bottom left no-repeat,
-      url(./img/fon1.jpg) top right no-repeat;
+    background: url("./img/sun.png") top left no-repeat,
+      url("./img/children1.png") bottom left no-repeat,
+      url("./img/fon1.jpg") top right no-repeat;
     h1 {
       width: 660px;
       padding: 124px 0 15px 0;
