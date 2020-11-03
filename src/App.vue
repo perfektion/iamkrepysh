@@ -40,7 +40,7 @@ h5,
 h6 {
   font-family: "BIP";
   color: #000;
-  span{
+  span {
     color: $color_accent;
   }
 }
@@ -91,5 +91,29 @@ main {
   max-width: $width_max;
   margin: 0 auto;
   position: relative;
+}
+
+@media screen and (max-width: $media_sm) {
+  h1{
+    font-size: 1.875rem;
+  }
+  .content {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: $media_md) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: $media_lg) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: $media_xl) {
+  .container {
+    max-width: 960px;
+  }
 }
 </style>

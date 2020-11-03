@@ -28,4 +28,15 @@ export default class IamOfferAge extends Vue {}
   padding-right: 30px;
   border-radius: 0 0 6px 6px;
 }
+@media screen and (max-width: $media_sm) {
+  .iam__offer__age {
+      font-size: 0.9375rem;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    right: -50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    bottom: 80%;
+  }
+}
 </style>

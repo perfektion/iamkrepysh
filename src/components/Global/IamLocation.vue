@@ -18,6 +18,7 @@ export default class IamLocation extends Vue {}
   background: none;
   padding: 0;
   cursor: pointer;
+  transition: all 0.3s ease;
   &:hover {
     outline: none;
     color: $color_accent;
@@ -30,8 +31,8 @@ export default class IamLocation extends Vue {}
     outline: none;
     color: $color_accent;
   }
-  i{
-    margin-right: .5rem;
+  i {
+    margin-right: 0.5rem;
   }
 }
 </style>

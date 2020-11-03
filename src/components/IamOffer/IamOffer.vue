@@ -37,8 +37,7 @@ export default class IamOffer extends Vue {}
     position: relative;
     background-color: #fff;
     background: url("./img/sun.png") top left no-repeat,
-      url("./img/children1.png") bottom left no-repeat,
-      url("./img/fon1.jpg") top right no-repeat;
+      url("./img/children1.png") bottom left no-repeat, url("./img/fon1.jpg") top right no-repeat;
     h1 {
       width: 660px;
       padding: 124px 0 15px 0;
@@ -78,6 +77,23 @@ export default class IamOffer extends Vue {}
         color: $color_accent;
         margin-right: 8px;
       }
+    }
+  }
+}
+@media screen and (max-width: $media_sm) {
+  .iam__offer {
+    .content {
+      background: url("./img/sun.png") top left no-repeat,
+        url("./img/children1.png") bottom left no-repeat;
+      h1 {
+        width: auto;
+      }
+      .iam__offer__scrollto {
+        margin-top: 100px;
+      }
+    }
+    .iam__offer__scrollto {
+      margin-top: 100px;
     }
   }
 }

@@ -15,6 +15,7 @@ export default class IamLogin extends Vue {}
 .iam__header__preheader__login {
   color: $color_grey_dark;
   text-decoration: none;
+  transition: all 0.3s ease;
   &:hover {
     outline: none;
     color: $color_accent;

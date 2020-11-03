@@ -48,4 +48,10 @@ export default class IamPhone extends Vue {}
     margin: 5px 0 0 0;
   }
 }
+
+@media screen and (max-width: $media_sm) {
+  .iam__phone {
+    display: none;
+  }
+}
 </style>
