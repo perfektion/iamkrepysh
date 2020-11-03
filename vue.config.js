@@ -1,5 +1,7 @@
 module.exports = {
-  publicPath: '/iamkrepysh/',
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/iamkrepysh/'
+    : '/',
   css: {
     loaderOptions: {
       sass: {
