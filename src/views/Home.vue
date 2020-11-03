@@ -4,6 +4,7 @@
     <IamOffer></IamOffer>
     <IamBenefit></IamBenefit>
     <IamTrainersTeam></IamTrainersTeam>
+    <IamBase></IamBase>
   </main>
 </template>
 
@@ -13,6 +14,7 @@ import IamHeader from '@/components/IamHeader/IamHeader.vue';
 import IamOffer from '@/components/IamOffer/IamOffer.vue';
 import IamBenefit from '@/components/IamBenefit/IamBenefit.vue';
 import IamTrainersTeam from '@/components/IamTrainersTeam/IamTrainersTeam.vue';
+import IamBase from '@/components/IamBase/IamBase.vue';
 
 @Options({
   components: {
@@ -20,6 +22,7 @@ import IamTrainersTeam from '@/components/IamTrainersTeam/IamTrainersTeam.vue';
     IamOffer,
     IamBenefit,
     IamTrainersTeam,
+    IamBase,
   },
 })
 export default class Home extends Vue {}
