@@ -36,4 +36,20 @@ export default class IamBase extends Vue {}
     margin-top: 55px;
   }
 }
+
+@media screen and (max-width: $media_sm) {
+.iam__base {
+  background-color: #fff;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 100px;
+  p {
+    color: $color_grey_dark;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+}
+}
 </style>

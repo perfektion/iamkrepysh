@@ -20,7 +20,7 @@ export default class IamOfferAge extends Vue {}
   color: #fff;
   font-family: "BIP";
   background: $color_accent;
-  right: -70px;
+  right: -68px;
   bottom: 75%;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -33,7 +33,7 @@ export default class IamOfferAge extends Vue {}
       font-size: 0.9375rem;
     padding-top: 14px;
     padding-bottom: 14px;
-    right: -50px;
+    right: -48px;
     padding-left: 20px;
     padding-right: 20px;
     bottom: 80%;

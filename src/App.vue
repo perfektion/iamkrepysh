@@ -97,23 +97,35 @@ main {
   h1{
     font-size: 1.875rem;
   }
+  h2{
+    font-size: 1.5rem;
+  }
+  .content {
+    max-width: 90%;
+  h2{
+    width: 100%;
+  }
+  }
+}
+
+@media screen and (max-width: $media_md) {
   .content {
     max-width: 90%;
   }
 }
 @media screen and (max-width: $media_md) {
-  .container {
-    max-width: 540px;
+  .content {
+    max-width: 90%;
   }
 }
 @media screen and (max-width: $media_lg) {
-  .container {
-    max-width: 720px;
+  .content {
+    max-width: 90%;
   }
 }
 @media screen and (max-width: $media_xl) {
-  .container {
-    max-width: 960px;
+  .content {
+    max-width: 96%;
   }
 }
 </style>

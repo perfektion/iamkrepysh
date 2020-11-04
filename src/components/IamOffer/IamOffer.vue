@@ -1,7 +1,7 @@
 <template>
   <section class="iam__offer">
     <div class="content">
-      <h1>Всестороннее <span>физическое развитие</span> ребенка</h1>
+      <h1>Всестороннее <span>физическое <br>развитие</span> ребенка</h1>
       <p>Весело, безопасно с гарантией результата.</p>
       <IamButton>Записаться</IamButton>
       <p class="iam__offer__copy">* приглашаем на пробную тренировку</p>
@@ -39,7 +39,6 @@ export default class IamOffer extends Vue {}
     background: url("./img/sun.png") top left no-repeat,
       url("./img/children1.png") bottom left no-repeat, url("./img/fon1.jpg") top right no-repeat;
     h1 {
-      width: 660px;
       padding: 124px 0 15px 0;
       margin: 0;
     }
@@ -85,9 +84,20 @@ export default class IamOffer extends Vue {}
     .content {
       background: url("./img/sun.png") top left no-repeat,
         url("./img/children1.png") bottom left no-repeat;
-      h1 {
-        width: auto;
+      .iam__offer__scrollto {
+        margin-top: 100px;
       }
+    }
+    .iam__offer__scrollto {
+      margin-top: 100px;
+    }
+  }
+}
+@media screen and (max-width: $media_md) {
+  .iam__offer {
+    .content {
+      background: url("./img/sun.png") top left no-repeat,
+        url("./img/children1.png") bottom left no-repeat;
       .iam__offer__scrollto {
         margin-top: 100px;
       }
