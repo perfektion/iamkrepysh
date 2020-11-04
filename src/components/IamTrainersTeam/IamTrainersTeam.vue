@@ -4,7 +4,7 @@
       <h2>Команда тренеров работают над развитием <span>вашего ребёнка</span></h2>
       <p>Каждый эксперт даёт только то, чему посвятил свою жизнь</p>
       <img src="./img/team.png" alt="Команда тренеров школы" />
-      <ul class="iam__trainers__arias" aria-label="Тренера помогают развить: ">
+      <ul class="iam__trainers__arias">
         <li class="iam__trainers__arias__first">Гибкость</li>
         <li class="iam__trainers__arias__second">Силу</li>
         <li class="iam__trainers__arias__third">Скорость</li>
