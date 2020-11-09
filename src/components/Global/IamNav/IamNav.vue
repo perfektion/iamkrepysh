@@ -198,12 +198,12 @@ export default defineComponent({
     width: 100%;
     list-style: none;
     padding: 0;
-    min-width: 450px;
   }
   .iam__nav__item {
     padding: 10px 0;
     margin: 0 0 20px 0;
     .iam__nav__item__link {
+      display: block;
       font-size: 1.125rem;
       color: #000;
       transition: all 0.3s ease;
@@ -217,6 +217,7 @@ export default defineComponent({
         display: block;
         position: relative;
         bottom: 9px;
+        right: 40px;
         transition: all 0.3s ease;
       }
       &:hover {
