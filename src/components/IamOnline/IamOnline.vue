@@ -3,7 +3,7 @@
     <img class="iam__online__mockup" src="./img/phone1.png" alt="Мобильное приложение" />
     <div class="iam__online__content">
       <h2 class="iam__online__title">
-        Отслеживайте результаты и<br />смотрите тренировки <span>онлайн</span>
+        Отслеживайте результаты<br />и смотрите тренировки <span>онлайн</span>
       </h2>
       <ul>
         <li>Уровни</li>
@@ -128,6 +128,7 @@ export default defineComponent({
       }
       .iam__online__btn + .iam__online__btn {
         margin-top: 10px;
+        margin-left: 0;
       }
     }
   }
