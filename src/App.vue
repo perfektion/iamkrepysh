@@ -108,7 +108,7 @@ main {
   }
 }
 
-@media screen and (max-width: $media_md) {
+@media screen and (max-width: $media_sm) {
   .content {
     max-width: 90%;
   }

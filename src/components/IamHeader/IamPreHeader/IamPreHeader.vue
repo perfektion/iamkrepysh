@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import IamLocation from '@/components/Global/IamLocation.vue';
+import IamLocation from '@/components/Global/IamLocation/IamLocation.vue';
 import IamSocial from '@/components/IamHeader/IamPreHeader/IamSocial.vue';
 import IamLogin from '@/components/IamHeader/IamPreHeader/IamLogin.vue';
 

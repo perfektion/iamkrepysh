@@ -1,11 +1,22 @@
 <template>
-  <button class="iam__button"><slot></slot></button>
+  <button :type="typeProp" :class="classProp" class="iam__button"><slot></slot></button>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 
-@Options({})
+@Options({
+  props: {
+    typeProp: {
+      type: String,
+      required: false,
+    },
+    classProp: {
+      type: String,
+      required: false,
+    },
+  },
+})
 export default class IamButton extends Vue {}
 </script>
 
@@ -23,15 +34,15 @@ export default class IamButton extends Vue {}
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  &:hover{
+  &:hover {
     outline: none;
     background-color: $color_accent_dark;
   }
-  &:focus{
+  &:focus {
     outline: none;
     background-color: $color_accent_dark;
   }
-  &:active{
+  &:active {
     outline: none;
     background-color: $color_accent_dark;
   }
