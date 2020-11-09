@@ -7,6 +7,7 @@
     <IamBase></IamBase>
     <IamVideoTraining></IamVideoTraining>
     <IamOnline></IamOnline>
+    <IamStatistics></IamStatistics>
   </main>
 </template>
 
@@ -19,6 +20,7 @@ import IamTrainersTeam from '@/components/IamTrainersTeam/IamTrainersTeam.vue';
 import IamBase from '@/components/IamBase/IamBase.vue';
 import IamVideoTraining from '@/components/IamVideoTraining/IamVideoTraining.vue';
 import IamOnline from '@/components/IamOnline/IamOnline.vue';
+import IamStatistics from '@/components/IamStatistics/IamStatistics.vue';
 
 @Options({
   components: {
@@ -29,6 +31,7 @@ import IamOnline from '@/components/IamOnline/IamOnline.vue';
     IamBase,
     IamVideoTraining,
     IamOnline,
+    IamStatistics,
   },
 })
 export default class Home extends Vue {}
