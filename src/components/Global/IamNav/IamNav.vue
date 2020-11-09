@@ -2,7 +2,7 @@
   <button
     @click="showNav = !showNav"
     class="iam__nav__btn"
-    :class="{ iam__nav__btn_active:showNav}"
+    :class="{ iam__nav__btn_active: showNav }"
   >
     <span class="iam__nav__btn_first"></span>
     <span class="iam__nav__btn_second"></span>
@@ -189,11 +189,13 @@ export default defineComponent({
 }
 .iam__nav__items {
   height: 100%;
+  width: 100%;
   padding: 0;
   display: flex;
   list-style: none;
   background: url(./img/map-2.svg) no-repeat center top;
   ul {
+    width: 100%;
     list-style: none;
     padding: 0;
     min-width: 450px;
@@ -249,7 +251,7 @@ export default defineComponent({
   .iam__nav__items {
     flex-direction: column;
   }
-  .iam__nav__items{
+  .iam__nav__items {
     background: #fff;
   }
 }
