@@ -1,5 +1,5 @@
 <template>
-  <router-view />
+  <router-view></router-view>
 </template>
 
 <style lang="scss">
@@ -20,6 +20,8 @@ html {
   line-height: 1;
 
   box-sizing: border-box;
+
+  scroll-behavior: smooth;
 }
 
 body {
@@ -94,21 +96,25 @@ main {
 }
 
 @media screen and (max-width: $media_sm) {
-  h1{
+  h1 {
     font-size: 1.875rem;
   }
-  h2{
+  h2 {
     font-size: 1.5rem;
   }
   .content {
     max-width: 90%;
-  h2{
-    width: 100%;
-  }
+    h2 {
+      width: 100%;
+    }
   }
 }
-
-@media screen and (max-width: $media_sm) {
+@media screen and (max-width: $media_xl) {
+  .content {
+    max-width: 96%;
+  }
+}
+@media screen and (max-width: $media_lg) {
   .content {
     max-width: 90%;
   }
@@ -118,14 +124,10 @@ main {
     max-width: 90%;
   }
 }
-@media screen and (max-width: $media_lg) {
+
+@media screen and (max-width: $media_sm) {
   .content {
     max-width: 90%;
-  }
-}
-@media screen and (max-width: $media_xl) {
-  .content {
-    max-width: 96%;
   }
 }
 </style>
