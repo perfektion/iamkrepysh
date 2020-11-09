@@ -6,9 +6,9 @@ module.exports = {
     loaderOptions: {
       scss: {
         prependData: `
-          @import "@/assets/_variables.scss";
-          @import "@/assets/_fonts.scss";
-          @import "@/assets/_animations.scss";
+          @import "@/assets/scss/_variables.scss";
+          @import "@/assets/scss/_fonts.scss";
+          @import "@/assets/scss/_animations.scss";
         `,
       },
     },

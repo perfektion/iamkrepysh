@@ -103,6 +103,8 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
+
+  name: 'IamNav',
   data: () => ({
     showNav: false,
   }),
