@@ -12,88 +12,11 @@
   <teleport v-if="showNav" to="#iam__header">
     <section class="iam__nav__content">
       <ul class="iam__nav__items content">
-        <ul>
-          <li class="iam__nav__item">
-            <a @click="showNav = !showNav" class="iam__nav__item__link" href="#benefit"
-              >Какую пользу принесут тренировки?</a
-            >
-          </li>
-          <li class="iam__nav__item">
-            <a @click="showNav = !showNav" class="iam__nav__item__link" href="#base"
-              >База физической подготовки</a
-            >
-          </li>
-          <li class="iam__nav__item">
-            <a @click="showNav = !showNav" class="iam__nav__item__link" href="#video-training"
-              >Как проходят тренировки?</a
-            >
-          </li>
-          <li class="iam__nav__item">
-            <a @click="showNav = !showNav" class="iam__nav__item__link" href="#online"
-              >Смотрите тренировки онлайн</a
-            >
-          </li>
-          <li class="iam__nav__item">
-            <a @click="showNav = !showNav" class="iam__nav__item__link" href="#statistics"
-              >Статистика</a
-            >
-          </li>
-          <li class="iam__nav__item">
-            <a @click="showNav = !showNav" class="iam__nav__item__link" href="#iamicon"
-              >Тренируйся играя!</a
-            >
-          </li>
-          <li class="iam__nav__item">
-            <a @click="showNav = !showNav" class="iam__nav__item__link" href="#results"
-              >Результаты крепышей</a
-            >
-          </li>
-          <li class="iam__nav__item">
-            <a @click="showNav = !showNav" class="iam__nav__item__link" href="#reviews-video"
-              >Почему нас любят?</a
-            >
-          </li>
-        </ul>
-        <ul>
-          <li class="iam__nav__item">
-            <a @click="showNav = !showNav" class="iam__nav__item__link" href="#history"
-              >История создания школы</a
-            >
-          </li>
-          <li class="iam__nav__item">
-            <a @click="showNav = !showNav" class="iam__nav__item__link" href="#trainers"
-              >Наши тренеры</a
-            >
-          </li>
-          <li class="iam__nav__item">
-            <a @click="showNav = !showNav" class="iam__nav__item__link" href="#safegym"
-              >Технология Safe Gym</a
-            >
-          </li>
-          <li class="iam__nav__item">
-            <a @click="showNav = !showNav" class="iam__nav__item__link" href="#cost"
-              >Стоимость тренировок</a
-            >
-          </li>
-          <li class="iam__nav__item">
-            <a @click="showNav = !showNav" class="iam__nav__item__link" href="#trial-training"
-              >Пробная тренировка</a
-            >
-          </li>
-          <li class="iam__nav__item">
-            <a @click="showNav = !showNav" class="iam__nav__item__link" href="#questions"
-              >Ответы на вопросы родителей</a
-            >
-          </li>
-          <li class="iam__nav__item">
-            <a @click="showNav = !showNav" class="iam__nav__item__link" href="#mobile-app"
-              >Мобильное приложение</a
-            >
-          </li>
-          <li class="iam__nav__item">
-            <a @click="showNav = !showNav" class="iam__nav__item__link" href="#footer">Контакты</a>
-          </li>
-        </ul>
+        <li v-for="item in navItems" :key="item" class="iam__nav__item">
+          <a @click="showNav = !showNav" class="iam__nav__item__link" :href="item.link">{{
+            item.title
+          }}</a>
+        </li>
       </ul>
     </section>
   </teleport>
@@ -103,11 +26,15 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-
   name: 'IamNav',
   data: () => ({
     showNav: false,
   }),
+  computed: {
+    navItems(): unknown {
+      return this.$store.state.navItems;
+    },
+  },
 });
 </script>
 
@@ -193,7 +120,7 @@ export default defineComponent({
   height: 100%;
   width: 100%;
   padding: 0;
-  display: flex;
+  column-count: 2;
   list-style: none;
   background: url(./img/map-2.svg) no-repeat center top;
   ul {
@@ -250,11 +177,16 @@ export default defineComponent({
   }
 }
 
+@media screen and (max-width: $media_md) {
+  .iam__nav__items {
+    column-count: 1;
+    background: #fff;
+  }
+}
+
 @media screen and (max-width: $media_sm) {
   .iam__nav__items {
-    flex-direction: column;
-  }
-  .iam__nav__items {
+    column-count: 1;
     background: #fff;
   }
 }

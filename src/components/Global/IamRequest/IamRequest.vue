@@ -47,7 +47,7 @@
               >Записаться на пробную тренировку</IamButton
             >
             <p class="personal-data">
-              Оставляя заявку я даю своё согласие на<br />
+              Оставляя заявку я даю своё согласие на
               <a href="personal-data.html" target="_blank">обработку персональных данных</a>
             </p>
           </form>
@@ -131,6 +131,7 @@ export default defineComponent({
       font-size: 0.875rem;
       color: $color_grey;
       a {
+        display: block;
         color: $color_accent;
         text-decoration: none;
         &:hover {

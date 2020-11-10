@@ -51,6 +51,9 @@ export default defineComponent({
   display: flex;
   justify-content: center;
   align-items: center;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  z-index: 99992;
   .content {
     background-color: #fff;
     width: auto;
@@ -98,8 +101,8 @@ export default defineComponent({
 }
 
 @media screen and (max-width: $media_sm) {
-  .iam__popup{
-    .content{
+  .iam__popup {
+    .content {
       padding: 35px 30px;
     }
   }
