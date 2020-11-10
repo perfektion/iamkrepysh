@@ -82,15 +82,15 @@ export default defineComponent({
     .iam__online__btn {
       display: block;
       transition: all 0.3s ease;
-      &:hover{
+      &:hover {
         outline: none;
         opacity: 0.6;
       }
-      &:focus{
+      &:focus {
         outline: none;
         opacity: 0.6;
       }
-      &:active{
+      &:active {
         outline: none;
         opacity: 0.6;
       }
@@ -100,6 +100,38 @@ export default defineComponent({
     }
     .iam__online__btn + .iam__online__btn {
       margin-left: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: $media_md) {
+  .iam__online {
+    flex-direction: column;
+    align-items: center;
+    .iam__online__mockup {
+      width: 80%;
+      margin-right: 10%;
+      order: 2;
+    }
+    .iam__online__content {
+      margin-left: 0;
+      ul {
+        li {
+          width: 100%;
+          text-align: center;
+          &::after {
+            content: none;
+          }
+        }
+      }
+      .iam__online__links {
+        flex-direction: row;
+        justify-content: center;
+      }
+      .iam__online__btn + .iam__online__btn {
+        margin-top: 0;
+        margin-left: 10px;
+      }
     }
   }
 }
@@ -114,6 +146,7 @@ export default defineComponent({
       order: 2;
     }
     .iam__online__content {
+      margin-left: 0;
       ul {
         li {
           width: 100%;

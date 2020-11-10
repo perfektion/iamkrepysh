@@ -205,6 +205,16 @@ export default defineComponent({
   right: 474px;
 }
 
+@media screen and (max-width: $media_md) {
+  .iam__location__map {
+    display: none;
+  }
+
+  .iam__location__form__submit {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: $media_sm) {
   .iam__location__map {
     display: none;

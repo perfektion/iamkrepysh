@@ -28,6 +28,7 @@ export default defineComponent({
 
 <style lang="scss">
 .iam__statistics {
+  width: 100%;
   background-color: $color_grey_bg;
   .iam__statistics__content {
     display: flex;
@@ -96,6 +97,70 @@ export default defineComponent({
       top: 418px;
       height: 304px;
       z-index: 5;
+    }
+  }
+}
+@media screen and (max-width: $media_md) {
+  .iam__statistics {
+    .iam__statistics__content {
+      justify-content: center;
+      text-align: center;
+      max-width: 90%;
+      .iam__statistics__main {
+        padding-top: 100px;
+        padding-bottom: 94px;
+        position: relative;
+        left: 0;
+        ul {
+          grid-template-columns: 1fr;
+          li {
+            width: 100%;
+            margin: 15px 0;
+          }
+
+          &::after {
+            content: none;
+          }
+        }
+      }
+      .iam__img__first {
+        display: none;
+      }
+      .iam__img__second {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: $media_sm) {
+  .iam__statistics {
+    .iam__statistics__content {
+      justify-content: center;
+      text-align: center;
+      max-width: 90%;
+      .iam__statistics__main {
+        padding-top: 100px;
+        padding-bottom: 94px;
+        position: relative;
+        left: 0;
+        ul {
+          grid-template-columns: 1fr;
+          li {
+            width: 100%;
+            margin: 15px 0;
+          }
+
+          &::after {
+            content: none;
+          }
+        }
+      }
+      .iam__img__first {
+        display: none;
+      }
+      .iam__img__second {
+        display: none;
+      }
     }
   }
 }

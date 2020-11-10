@@ -185,6 +185,75 @@ export default class IamTrainersTeam extends Vue {}
   }
 }
 
+@media screen and (max-width: $media_md) {
+  .iam__trainers {
+    .content {
+      img {
+        width: 100%;
+      }
+      h2 {
+        width: 100%;
+      }
+      .iam__trainers__arias {
+        list-style: none;
+        position: inherit;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        widows: 100%;
+        padding: 0;
+        li {
+          text-align: center;
+          font-size: 1.125rem;
+          position: static;
+          width: 32%;
+        }
+        .iam__trainers__arias__first {
+          background: #237fce;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          top: 0;
+          left: 0;
+          &::before {
+            content: "";
+            position: inherit;
+          }
+        }
+        .iam__trainers__arias__second {
+          position: inherit;
+          background: #c31f06;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 20px;
+          top: 0;
+          left: 0;
+          &::before {
+            content: "";
+            position: inherit;
+          }
+        }
+        .iam__trainers__arias__third {
+          position: inherit;
+          background: #e49a37;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: 0;
+          left: 0;
+          &::after {
+            content: "";
+            position: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: $media_sm) {
   .iam__trainers {
     .content {

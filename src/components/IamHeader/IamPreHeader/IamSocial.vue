@@ -55,18 +55,8 @@ export default class IamSocial extends Vue {}
   }
 }
 @media screen and (max-width: $media_md) {
-  .container {
-    max-width: 540px;
-  }
-}
-@media screen and (max-width: $media_lg) {
-  .container {
-    max-width: 720px;
-  }
-}
-@media screen and (max-width: $media_xl) {
-  .container {
-    max-width: 960px;
+  .iam__header__preheader__social {
+    display: none;
   }
 }
 </style>

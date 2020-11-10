@@ -141,6 +141,50 @@ export default class IamBenefit extends Vue {}
     }
   }
 }
+@media screen and (max-width: $media_md) {
+  .iam__benefit {
+    margin-top: -36px;
+    .content {
+      p {
+        width: auto;
+      }
+      .iam__benefit__img {
+        display: none;
+      }
+      .iam__benefit__img__second {
+        display: block;
+        width: 100%;
+      }
+      .iam__benefit__list {
+        flex-direction: column;
+        margin: 0;
+        ul {
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          li {
+            width: auto;
+            height: 75px;
+            text-align: center;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            margin-top: 0;
+            transition: all 0.3s ease;
+            border: 2px solid #ff6f00;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 30px;
+            line-height: 1.48em;
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: $media_sm) {
   .iam__benefit {
     margin-top: -36px;

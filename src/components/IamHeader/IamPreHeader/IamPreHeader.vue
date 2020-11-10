@@ -26,6 +26,7 @@ export default class IamPreHeader extends Vue {}
 
 <style lang="scss">
 .iam__header__preheader {
+  width: 100%;
   padding: 25px 0;
   background: $color_grey_light;
   font-size: 0.9375rem;
