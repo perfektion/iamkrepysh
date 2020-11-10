@@ -1,7 +1,7 @@
 <template>
   <section role="dialog" v-if="active" class="iam__popup">
     <div class="content">
-      <button v-if="closeBtn" tabindex="1000" @click="onClick" class="iam__popup__close__button">
+      <button v-if="closeBtn" @click="onClick" class="iam__popup__close__button">
         <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
           <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
         </svg>
@@ -52,10 +52,8 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
   .content {
-    display: flex;
-    flex-direction: column;
     background-color: #fff;
-    width: 100%;
+    width: auto;
     position: relative;
     padding: 65px 60px;
     border-radius: 10px;

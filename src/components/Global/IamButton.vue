@@ -47,9 +47,4 @@ export default class IamButton extends Vue {}
     background-color: $color_accent_dark;
   }
 }
-@media screen and (max-width: $media_sm) {
-  .iam__button {
-    width: 70%;
-  }
-}
 </style>

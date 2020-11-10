@@ -6,24 +6,26 @@
   <teleport to="body">
     <transition name="fade" mode="out-in">
       <IamPopup :closeBtn="false" v-model:active="popupOpen">
-        <h2 class="iam__location__title">Выберите <span>свой город</span></h2>
-        <form focus method="POST" action="" class="iam__location__form">
-          <template v-for="city in citys" :key="city.id">
-            <input :id="city.id" type="radio" name="town" :value="city.value" v-model="town" />
-            <label :for="city.id" class="iam__location__content__label">{{ city.name }}</label>
-          </template>
+        <section class="iam__location">
+          <h2 class="iam__location__title">Выберите <span>свой город</span></h2>
+          <form focus method="POST" action="" class="iam__location__form">
+            <template v-for="city in citys" :key="city.id">
+              <input :id="city.id" type="radio" name="town" :value="city.value" v-model="town" />
+              <label :for="city.id" class="iam__location__content__label">{{ city.name }}</label>
+            </template>
 
-          <IamButton @click="submitForm" type="submit" class="iam__location__form__submit"
-            >Выбрать</IamButton
-          >
-        </form>
-        <div class="iam__location__map">
-          <img class="iam__location__img" src="./img/map.svg" alt="" />
-          <img class="iam__location__img__marker marker-1" src="./img/map-marker.svg" />
-          <img class="iam__location__img__marker marker-2" src="./img/map-marker.svg" />
-          <img class="iam__location__img__marker marker-3" src="./img/map-marker.svg" />
-          <img class="iam__location__img__marker marker-4" src="./img/map-marker.svg" />
-        </div>
+            <IamButton @click="submitForm" type="submit" class="iam__location__form__submit"
+              >Выбрать</IamButton
+            >
+          </form>
+          <div class="iam__location__map">
+            <img class="iam__location__img" src="./img/map.svg" alt="" />
+            <img class="iam__location__img__marker marker-1" src="./img/map-marker.svg" />
+            <img class="iam__location__img__marker marker-2" src="./img/map-marker.svg" />
+            <img class="iam__location__img__marker marker-3" src="./img/map-marker.svg" />
+            <img class="iam__location__img__marker marker-4" src="./img/map-marker.svg" />
+          </div>
+        </section>
       </IamPopup>
     </transition>
   </teleport>
@@ -78,8 +80,6 @@ export default defineComponent({
     },
     popupClick() {
       this.popupOpen = !this.popupOpen;
-      const inp = document.querySelector('#city-1');
-      window.console.log(inp);
     },
   },
   created() {
@@ -92,6 +92,11 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
+.iam__location{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .iam__location__button {
   outline: none;
   color: $color_grey_dark;
@@ -121,6 +126,7 @@ export default defineComponent({
 .iam__location__title {
   margin: 0;
   font-size: 1.5625rem;
+  width: 100%;
 }
 .iam__location__form {
   display: flex;
@@ -179,30 +185,33 @@ export default defineComponent({
   width: fit-content;
   margin-top: 15px;
 }
+.iam__location__map{
+  position: relative;
+}
 .iam__location__img {
-  position: absolute;
-  right: 50px;
-  top: 40px;
+  position: relative;
+  right: 0;
+  top: -40px;
 }
 .iam__location__img__marker {
   position: absolute;
   box-shadow: 0px 0px 5px rgba(255, 111, 0, 0.15);
 }
 .marker-1 {
-  top: 222px;
-  right: 572px;
+  top: 142px;
+  right: 522px;
 }
 .marker-2 {
-  top: 248px;
-  right: 388px;
+  top: 168px;
+  right: 338px;
 }
 .marker-3 {
-  top: 180px;
-  right: 514px;
+  top: 100px;
+  right: 464px;
 }
 .marker-4 {
-  top: 142px;
-  right: 474px;
+  top: 62px;
+  right: 424px;
 }
 
 @media screen and (max-width: $media_md) {

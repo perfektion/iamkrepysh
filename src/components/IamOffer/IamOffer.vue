@@ -3,7 +3,7 @@
     <div class="content">
       <h1>Всестороннее <span>физическое <br>развитие</span> ребенка</h1>
       <p>Весело, безопасно с гарантией результата.</p>
-      <IamButton>Записаться</IamButton>
+      <IamRequest></IamRequest>
       <p class="iam__offer__copy">* приглашаем на пробную тренировку</p>
       <a href="#benefit" class="iam__offer__scrollto">
         <i class="fas fa-arrow-down"></i>
@@ -18,11 +18,13 @@
 import { Options, Vue } from 'vue-class-component';
 import IamButton from '@/components/Global/IamButton.vue';
 import IamOfferAge from '@/components/IamOffer/IamOfferAge.vue';
+import IamRequest from '@/components/Global/IamRequest/IamRequest.vue';
 
 @Options({
   components: {
     IamButton,
     IamOfferAge,
+    IamRequest,
   },
 })
 export default class IamOffer extends Vue {}
